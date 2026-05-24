@@ -711,7 +711,7 @@ function placeOrder(){
   const msg = encodeURIComponent(`Halo Fruitie Bites! 🍋\n\nSaya ingin memesan:\n\n🍱 Menu: ${selectedMenu.emoji} ${selectedMenu.name}\n🌶️ Level Pedas: ${selectedSpicy.name}\n📦 Ukuran: ${selectedSize.name} (${selectedSize.ml})\n🔢 Jumlah: ${qty} porsi\n💰 Total: ${formatRupiah(selectedPrice * qty)}\n\nMohon konfirmasi pesanan saya. Terima kasih! 😊`);
   showToast('🎉 Pesanan dikirim! Membuka WhatsApp...');
   setTimeout(()=>{
-    window.open('https://wa.me/6285820362515?text='+msg, '_blank');
+    window.open('https://wa.me/6285820362515='+msg, '_blank');
   }, 800);
 }
 
